@@ -1,0 +1,169 @@
+html, body {
+    height: 100%;
+    margin: 0;  /* Remove any default margins */
+}
+
+body {
+    background-image: url(Images/triangles_background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#just_header {
+    background-image: url(Images/data_analytics.png);
+    background-color: black;
+}
+
+#header_div {
+    text-align: right;
+}
+
+#two_p {
+    text-align: right;
+}
+
+#name_p {
+    position: absolute;
+}
+
+#smoke {
+    position: absolute;
+    opacity: 20%;
+    top: -25%;
+    left: -5%;
+    height: 100%;
+}
+
+#login_screen {
+    position: absolute;
+    width: 15%;
+    right: 40%;
+    top: 26%;
+    color: white;
+    opacity: 65%;
+}
+
+#just_me {
+    opacity: 70%;
+    transition: opacity ease-in-out 0.5s;
+}
+
+#just_me:hover {
+    opacity: 90%; 
+}
+
+#login_btn {
+    width: 60%;    
+}
+
+#login_btn img {
+    border-radius: 50%;
+}
+
+#projects {
+    background-image: url('Images/laptop.jpg'); /* Path to your laptop image */
+    background-size: 100%; /* Ensure the laptop image scales nicely */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image within the section */
+    position: relative;
+    height: 500px; /* Set an appropriate height for the section */
+    display: flex; /* Enables flexbox for centering content */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    color: transparent;
+}
+
+#projects_title {
+    position: absolute;
+    color: white;
+    top: 10.5%;
+    right: 42%;
+    font-size: 170%;
+    transform: scaleY(0.8);
+    opacity: 85%;
+}
+
+#project1, #project2, #project3, #project4 {
+    position: absolute;
+    margin: 0;
+    width: 18.5%;
+    height: 25%;
+    opacity: 60%;
+    background-color: white;
+    border-radius: 3%;
+    transition: opacity ease-in-out 0.5s;
+}
+
+#project1:hover, #project2:hover, #project3:hover, #project4:hover {
+    opacity: 85%;
+}
+
+#project1 {
+    top: 19%;
+    right: 48%;
+    background-image: url(Images/powerbi_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#project2 {
+    top: 19%;
+    right: 29%;
+    background-image: url(Images/python_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#project3 {
+    top: 45%;
+    right: 48%;
+    background-image: url(Images/mysql_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#project4 {
+    top: 45%;
+    right: 29%;
+    background-image: url(Images/tableau_logo.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#projects_display {
+    display: none;
+}
+
+#projects a {
+    color: transparent;
+}
+
+#taskbar {
+    position: absolute;
+    background-color: darkgray;
+    color: white;
+    width: 39%;
+    top: 72%;
+    right: 28.3%;
+    border-radius: 3%;
+    text-align: left;
+    text-indent: 1.5%;
+    display: none;
+    opacity: 85%;
+}
+
+#logoff_btn {
+    padding: 2px;
+}
+
+#taskbar button:hover {
+    color: gold;
+}
+
+#contact, #about {
+    background-color: transparent;
+}

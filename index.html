@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osman Erdal - Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Header Section -->
+    <header id="just_header" class="bg-blue-600 text-white py-6">
+        <div id="header_div" class="container mx-auto text-center">
+            <h1 id="name_p" class="text-4xl font-bold">Hi, I'm Osman Erdal</h1>
+            <div id="two_p">
+                <p class="mt-2 text-lg">Data Analyst | Python, SQL, Excel, Tableau, Power BI</p>
+                <p class="mt-2">Passionate about turning data into actionable insights.</p>
+            </div>
+            <a href="#projects" class="mt-4 inline-block bg-white text-blue-600 py-2 px-6 rounded-full hover:bg-gray-200 transition">See My Work</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p class="text-lg">I'm a data analyst with experience in Python, SQL, and data visualization. I love working with data to uncover patterns and insights that help businesses make informed decisions.</p>
+        </div>
+    </section>
+
+   <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-200 text-center flex justify-center items-center">
+        <div id="gif_images">
+            <img id = "smoke" src="Images/smoke.gif" alt="">
+        </div>
+        <div id="login_screen">
+            <button onclick="login()" id="login_btn"><img id="just_me" src="Images/Me.jpg" alt="myface.png"></button>
+            <p id="image_text" class="mt-4 text-white">Click to reveal projects</p>
+        </div>
+        <div id="taskbar" class="container">
+            <button onclick="logoff()" id="logoff_btn">Log Off</button>
+        </div>
+        <div id="projects_display" class="container mx-auto px-6">
+            <h2 id="projects_title" class="text-3xl font-bold mb-8">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a href="https://github.com/Erdas321/data-analysis-portfolio/tree/main/powerbi_projects" target="_blank"><div id="project1"></div></a>
+                <a href="https://github.com/Erdas321/data-analysis-portfolio/tree/main/python_projects" target="_blank"><div id="project2"></div></a>
+                <a href="https://github.com/Erdas321/data-analysis-portfolio/tree/main/sql_projects" target="_blank"><div id="project3"></div></a>
+                <a href="https://github.com/Erdas321/data-analysis-portfolio/tree/main/tableau_projects" target="_blank"><div id="project4"></div></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+            <p class="text-lg mb-6">Feel free to reach out if you'd like to collaborate, learn more, or have any questions!</p>
+            <a href="mailto:eddiequill08@gmail.com" class="inline-block bg-blue-600 text-white py-2 px-6 rounded-full hover:bg-blue-700 transition">Email Me</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>&copy; 2025 Osman Erdal. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
