@@ -24,6 +24,7 @@ body {
 
 #name_p {
     position: absolute;
+    text-align: center;
 }
 
 #smoke {
