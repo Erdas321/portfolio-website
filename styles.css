@@ -10,12 +10,18 @@ body {
 }
 
 #just_header {
+    max-width: 100%;
+    max-height: 100%;
     background-image: url(Images/data_analytics.png);
-    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #header_div {
     text-align: right;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 1% 2%;
 }
 
 #two_p {
@@ -31,7 +37,7 @@ body {
     position: absolute;
     opacity: 20%;
     top: -25%;
-    left: -5%;
+    left: -7%;
     height: 100%;
 }
 
@@ -39,7 +45,7 @@ body {
     position: absolute;
     width: 15%;
     right: 40%;
-    top: 26%;
+    top: 30%;
     color: white;
     opacity: 65%;
 }
@@ -63,11 +69,11 @@ body {
 
 #projects {
     background-image: url('Images/laptop.jpg'); /* Path to your laptop image */
-    background-size: 100%; /* Ensure the laptop image scales nicely */
+    background-size: cover; /* Ensure the laptop image scales nicely */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-position: center; /* Centers the image within the section */
     position: relative;
-    height: 500px; /* Set an appropriate height for the section */
+    height: 80%; /* Set an appropriate height for the section */
     display: flex; /* Enables flexbox for centering content */
     justify-content: center; /* Centers content horizontally */
     align-items: center; /* Centers content vertically */
@@ -86,9 +92,10 @@ body {
 
 #project1, #project2, #project3, #project4, #project5 {
     position: absolute;
+    display: grid;
     margin: 0;
     width: 18.5%;
-    height: 25%;
+    height: 20%;
     opacity: 60%;
     background-color: white;
     border-radius: 3%;
@@ -100,7 +107,7 @@ body {
 }
 
 #project1 {
-    top: 19%;
+    top: 29%;
     right: 48%;
     background-image: url(Images/powerbi_logo.png);
     background-size: contain;
@@ -109,7 +116,7 @@ body {
 }
 
 #project2 {
-    top: 19%;
+    top: 29%;
     right: 29%;
     background-image: url(Images/python_logo.png);
     background-size: contain;
@@ -118,7 +125,7 @@ body {
 }
 
 #project3 {
-    top: 45%;
+    top: 50%;
     right: 48%;
     background-image: url(Images/mysql_logo.png);
     background-size: contain;
@@ -127,7 +134,7 @@ body {
 }
 
 #project4 {
-    top: 45%;
+    top: 50%;
     right: 29%;
     background-image: url(Images/excel_logo.png);
     background-size: 90%;
@@ -136,13 +143,13 @@ body {
 }
 
 #project5 {
-    top: 10%;
+    top: 13.2%;
     right: 29%;
     background-image: url(Images/tableau_logo.png);
-    background-size: 30%;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 8%;
+    height: 14.8%;
     width: 37.5%;
     border-top-right-radius: 20%;
     border-top-left-radius: 20%;
@@ -152,18 +159,13 @@ body {
     display: none;
 }
 
-#projects a {
-    color: transparent;
-}
-
 #taskbar {
     position: absolute;
     background-color: darkgray;
     color: white;
-    width: 39%;
+    width: 38.6%;
     top: 72%;
-    right: 28.3%;
-    border-radius: 3%;
+    right: 28.5%;
     text-align: left;
     text-indent: 1.5%;
     display: none;
@@ -181,3 +183,5 @@ body {
 #contact, #about {
     background-color: transparent;
 }
+
+
