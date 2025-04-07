@@ -13,17 +13,15 @@
         }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-900">
+<body class="bg-gray-0 text-gray-900">
 
     <!-- Header Section -->
     <header id="just_header" class="bg-blue-600 text-white py-6">
         <div id="header_div" class="container mx-auto text-center">
-            <h1 id="name_p" class="text-4xl font-bold">Hi, I'm<br>Osman<br>Erdal</h1>
-            <div id="two_p">
-                <p class="mt-2 text-lg">Data Analyst | Python, SQL, Excel, Tableau, Power BI</p>
-                <p class="mt-2">Passionate about turning data into actionable insights.</p>
-            </div>
-            <a href="#projects" class="mt-4 inline-block bg-white text-blue-600 py-2 px-6 rounded-full hover:bg-gray-200 transition">See My Work</a>
+            <h1 id="name_p" class="piece text-4xl font-bold">Hi, I'm Osman Erdal</h1>
+            <p id="p_one" class="piece mt-2 text-lg">Data Analyst<br>Python, SQL, Excel, Tableau, Power BI</p>
+            <p id="p_two" class="piece mt-2">Passionate about turning<br>data into actionable insights</p>
+            <a id="smw" href="#projects" class="piece mt-4 inline-block bg-white text-blue-600 py-2 px-6 rounded-full hover:bg-gray-200 transition">See My Work</a>
         </div>
     </header>
 
@@ -41,20 +39,18 @@
             <img id = "smoke" src="Images/smoke.gif" alt="">
         </div>
         <div id="login_screen">
-            <button onclick="login()" id="login_btn"><img id="just_me" src="Images/Me.jpg" alt="myface.png"></button>
-            <p id="image_text" class="mt-4 text-white">Click to reveal projects</p>
+            <button id="login_btn" onclick="login()"><img id="just_me" src="Images/Me.jpg" alt="myface.png"></button>
+            <p id="img_text">Log In</p>
         </div>
-        <div id="taskbar" class="container">
-            <button onclick="logoff()" id="logoff_btn">Log Off</button>
-        </div>
-        <div id="projects_display" class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <a href="https://github.com/Erdas321/data-analysis-portfolio/tree/main/powerbi_projects" target="_blank"><div id="project1"></div></a>
-                <a href="https://github.com/Erdas321/data-analysis-portfolio/tree/main/python_projects" target="_blank"><div id="project2"></div></a>
-                <a href="https://github.com/Erdas321/data-analysis-portfolio/tree/main/sql_projects" target="_blank"><div id="project3"></div></a>
-                <a href="https://github.com/Erdas321/data-analysis-portfolio/tree/main/excel_projects" target="_blank"><div id="project4"></div></a>
-                <a href="https://github.com/Erdas321/data-analysis-portfolio/tree/main/tableau_projects" target="_blank"><div id="project5"></div></a>
+        <div id="laptop_display">
+            <div id="taskbar" class="item container">
+                <button id="logoff_btn" onclick="logoff()"><img src="Images/logoff_icon.png" alt="logoff icon"></button>
             </div>
+            <div id="project1" class="item"><a href="https://github.com/Erdas321/data-analysis-portfolio/tree/main/powerbi_projects" target="_blank"></a></div>
+            <div id="project2" class="item"><a href="https://github.com/Erdas321/data-analysis-portfolio/tree/main/python_projects" target="_blank"></a></div>
+            <div id="project3" class="item"><a href="https://github.com/Erdas321/data-analysis-portfolio/tree/main/sql_projects" target="_blank"></a></div>
+            <div id="project4" class="item"><a href="https://github.com/Erdas321/data-analysis-portfolio/tree/main/excel_projects" target="_blank"></a></div>
+            <div id="project5" class="item"><a href="https://github.com/Erdas321/data-analysis-portfolio/tree/main/tableau_projects" target="_blank"></a></div>
         </div>
     </section>
 

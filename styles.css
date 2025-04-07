@@ -1,70 +1,91 @@
 html, body {
-    height: 100%;
-    margin: 0;  /* Remove any default margins */
+    height: auto;
+    margin: 0;
 }
 
 body {
-    background-image: url(Images/triangles_background.jpg);
+    background-image: url(Images/hex_background.jpg);
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #just_header {
-    max-width: 100%;
-    max-height: 100%;
     background-image: url(Images/data_analytics.png);
+    height: 25%;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode:multiply;
 }
 
 #header_div {
-    text-align: right;
-    max-width: 100%;
-    max-height: 100%;
-    padding: 1% 2%;
-}
-
-#two_p {
-    text-align: right;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px 1px;
+    font-size: 20px;
+    padding: 10px;
 }
 
 #name_p {
-    position: absolute;
+    grid-column: 1;
+    grid-row: 1;
     text-align: left;
+    font-size: 30px;
+}
+
+#p_one {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: right;
+}
+
+#p_two {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: right;
+}
+
+#smw {
+    grid-column: 1;
+    grid-row: 2;
+    width: 45%;
 }
 
 #smoke {
     position: absolute;
     opacity: 20%;
-    top: -25%;
-    left: -7%;
-    height: 100%;
+    top: 6%;
+    left: -17%;
+    height: 60%;
+    width: 60%;
+    filter: brightness(5);
 }
 
 #login_screen {
     position: absolute;
-    width: 15%;
-    right: 40%;
-    top: 30%;
+    width: 8%;
+    right: 43.5%;
+    top: 35%;
     color: white;
     opacity: 65%;
+    display: block;
+    padding: 2px;
 }
 
 #just_me {
     opacity: 75%;
     transition: opacity ease-in-out 0.5s;
+    border-radius: 50%;
 }
 
 #just_me:hover {
     opacity: 95%; 
 }
 
-#login_btn {
-    width: 60%;    
-}
-
-#login_btn img {
-    border-radius: 50%;
+#img_text {
+    font-size: 12.5px;
 }
 
 #projects {
@@ -73,115 +94,114 @@ body {
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-position: center; /* Centers the image within the section */
     position: relative;
-    height: 80%; /* Set an appropriate height for the section */
-    display: flex; /* Enables flexbox for centering content */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
+    height: 100%; /* Set an appropriate height for the section */
+    width: auto;
+    aspect-ratio: 16/9;
     color: transparent;
 }
 
-#projects_title {
+#laptop_display {
+    display: none;
     position: absolute;
-    color: white;
-    top: 10.5%;
-    right: 42%;
-    font-size: 170%;
-    transform: scaleY(0.8);
-    opacity: 85%;
+    background-color: black;
+    grid-template-columns: 1fr 1fr;   /* Two equal columns */
+    grid-template-rows: 1fr 1.5fr 1.5fr 0.4fr; /* Four rows: top, middle top, middle bottom, bottom */
+    gap: 3px 3px; /* Adjust as needed */
+    height: 43.8%; /* Full container height */
+    width: 38.4%;
+    top: 23.8%;
+    left: 33%;
+
 }
 
-#project1, #project2, #project3, #project4, #project5 {
-    position: absolute;
-    display: grid;
-    margin: 0;
-    width: 18.5%;
-    height: 20%;
-    opacity: 60%;
+.item {
     background-color: white;
-    border-radius: 3%;
-    transition: opacity ease-in-out 0.5s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    transition: opacity ease-in-out 0.2s;
+    opacity: 0.45;
 }
 
-#project1:hover, #project2:hover, #project3:hover, #project4:hover, #project5:hover {
-    opacity: 85%;
+.item:hover {
+    opacity: 0.60;
+}
+
+.item a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 #project1 {
-    top: 29%;
-    right: 48%;
     background-image: url(Images/powerbi_logo.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    grid-column: 1; /* Place in the left column */
+    grid-row: 2; /* Place in the middle row */
 }
 
 #project2 {
-    top: 29%;
-    right: 29%;
     background-image: url(Images/python_logo.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    grid-column: 1; /* Place in the left column */
+    grid-row: 3; /* Place in the middle row */
 }
 
 #project3 {
-    top: 50%;
-    right: 48%;
     background-image: url(Images/mysql_logo.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    grid-column: 2; /* Place in the right column */
+    grid-row: 2; /* Place in the middle row */
 }
 
 #project4 {
-    top: 50%;
-    right: 29%;
     background-image: url(Images/excel_logo.png);
-    background-size: 90%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    grid-column: 2; /* Place in the right column */
+    grid-row: 3; /* Place in the middle row */
 }
 
 #project5 {
-    top: 13.2%;
-    right: 29%;
     background-image: url(Images/tableau_logo.png);
-    background-size: 50%;
+    background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 14.8%;
-    width: 37.5%;
-    border-top-right-radius: 20%;
-    border-top-left-radius: 20%;
-}
-
-#projects_display {
-    display: none;
+    grid-column: span 2; /* Project 5 takes the full width */
+    grid-row: 1; /* Position at the top */
 }
 
 #taskbar {
-    position: absolute;
-    background-color: darkgray;
-    color: white;
-    width: 38.6%;
-    top: 72%;
-    right: 28.5%;
-    text-align: left;
-    text-indent: 1.5%;
-    display: none;
-    opacity: 85%;
+    position: relative;
+    background-color: rgb(47, 77, 168);
+    grid-column: span 2; /* Taskbar spans both columns */
+    grid-row: 4; /* Position at the bottom */
+    padding: 2px;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
 }
 
 #logoff_btn {
+    position: absolute;
     padding: 2px;
+    opacity: 0.6;
+    width: 6%;
+    transition: opacity ease-in-out 0.2s;
 }
 
-#taskbar button:hover {
-    color: gold;
+#logoff_btn:hover {
+    opacity: 100%;
 }
 
 #contact, #about {
     background-color: transparent;
 }
-
-
