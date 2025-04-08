@@ -57,9 +57,9 @@ body {
     position: absolute;
     opacity: 20%;
     top: 6%;
-    left: -17%;
+    left: -7%;
     height: 60%;
-    width: 60%;
+    width: 40%;
     filter: brightness(5);
 }
 
@@ -94,7 +94,7 @@ body {
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-position: center; /* Centers the image within the section */
     position: relative;
-    height: 100%; /* Set an appropriate height for the section */
+    height: auto; /* Set an appropriate height for the section */
     width: auto;
     aspect-ratio: 16/9;
     color: transparent;
@@ -103,7 +103,6 @@ body {
 #laptop_display {
     display: none;
     position: absolute;
-    background-color: black;
     background-image: url(Images/hex_background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -133,11 +132,10 @@ body {
     background-position: center;
     border-radius: 8px;
     transition: opacity ease-in-out 0.2s;
-    opacity: 1;
 }
 
 .prj:hover {
-    opacity: 0.60;
+    opacity: 0.6;
 }
 
 .item a {
@@ -192,7 +190,6 @@ body {
 }
 
 #taskbar {
-    position: relative;
     background-color: rgb(47, 77, 168);
     grid-column: span 2; /* Taskbar spans both columns */
     grid-row: 4; /* Position at the bottom */
