@@ -104,13 +104,17 @@ body {
     display: none;
     position: absolute;
     background-color: black;
+    background-image: url(Images/hex_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     grid-template-columns: 1fr 1fr;   /* Two equal columns */
-    grid-template-rows: 1fr 1.5fr 1.5fr 0.4fr; /* Four rows: top, middle top, middle bottom, bottom */
+    grid-template-rows: 1.5fr 2fr 2fr 6%; /* Four rows: top, middle top, middle bottom, bottom */
     gap: 3px 3px; /* Adjust as needed */
-    height: 43.8%; /* Full container height */
+    height: 44.2%; /* Full container height */
     width: 38.4%;
-    top: 23.8%;
+    top: 23%;
     left: 33%;
+    border-radius: 20px;
 }
 
 @keyframes fadeIn {
@@ -124,16 +128,15 @@ body {
 }
 
 .item {
-    background-color: white;
-    background-size: cover;
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 8px;
     transition: opacity ease-in-out 0.2s;
-    opacity: 0.45;
+    opacity: 1;
 }
 
-.item:hover {
+.prj:hover {
     opacity: 0.60;
 }
 
@@ -181,7 +184,7 @@ body {
 
 #project5 {
     background-image: url(Images/tableau_logo.png);
-    background-size: 40%;
+    background-size: 45%;
     background-repeat: no-repeat;
     background-position: center;
     grid-column: span 2; /* Project 5 takes the full width */
@@ -194,16 +197,15 @@ body {
     grid-column: span 2; /* Taskbar spans both columns */
     grid-row: 4; /* Position at the bottom */
     padding: 2px;
-    opacity: 0.7;
     display: flex;
     align-items: center;
+    border-radius: 0;
 }
 
 #logoff_btn {
-    position: absolute;
-    padding: 2px;
-    opacity: 0.6;
-    width: 6%;
+    padding: 3px;
+    opacity: 0.7;
+    width: 4.5%;
     transition: opacity ease-in-out 0.2s;
 }
 
